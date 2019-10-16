@@ -1,0 +1,662 @@
+bash: /opt/openfoam5/etc/bashrc: No such file or directory
+sangeeta@sangeeta-H110M-H:~/ParMooN/ParMooN/build$ cmake ..
+-- The C compiler identification is GNU 6.5.0
+-- The CXX compiler identification is GNU 5.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+==================Searching BLAS in the System - begin===================================================
+BLAS_NOT_FOUND in your system, Searching in ParMooN
+BLAS not found in the system, so checking the availability in ParMooN for the selected AParMooN_ARCH=LINUX64
+-- Found BLAS: /home/sangeeta/ParMooN/ParMooN/EXT_LIB/ACML/gfortran64/lib/libacml.so;/home/sangeeta/ParMooN/ParMooN/EXT_LIB/ACML/gfortran64/lib/libacml_mv.a  
+==================Searching BLAS in the System - end=====================================================
+BLAS_LIBRARIES  = /home/sangeeta/ParMooN/ParMooN/EXT_LIB/ACML/gfortran64/lib/libacml.so;/home/sangeeta/ParMooN/ParMooN/EXT_LIB/ACML/gfortran64/lib/libacml_mv.a
+==================Searching UMFPACK in the System - begin===================================================
+UMFPACK not found in the system, so checking the availability in ParMooN for the selected AParMooN_ARCH=LINUX64
+-- Found UMFPACK: /home/sangeeta/ParMooN/ParMooN/EXT_LIB/UMFPACK/Lib/libumfpack_LINUX64.a;/home/sangeeta/ParMooN/ParMooN/EXT_LIB/UMFPACK/Lib/libamd_LINUX64.a;/home/sangeeta/ParMooN/ParMooN/EXT_LIB/UMFPACK/Lib/libsuitesparseconfig_LINUX64.a  
+==================Searching UMFPACK in the System - end=====================================================
+==================Searching GRIDGEN in the System - begin==================================================
+GRIDGEN not found in the system, so checking the availability in ParMooN for the selected AParMooN_ARCH=LINUX64
+-- Found GRIDGEN: /home/sangeeta/ParMooN/ParMooN/EXT_LIB/GridGen/libgridgen_LINUX64.so  
+==================Searching GRIDGEN in the System - end====================================================
+==================Searching TECPLOT in the System - begin==================================================
+TECPLOT not found in the system, so checking the availability in ParMooN for the selected AParMooN_ARCH=LINUX64
+-- Found TECPLOT: /home/sangeeta/ParMooN/ParMooN/EXT_LIB/tecplot/lib/libtecio_LINUX64.a  
+==================Searching TECPLOT in the System - end====================================================
+CMAKE_SOURCE_DIR  = /home/sangeeta/ParMooN/ParMooN
+============================================================================================================
+AParMooN_GEO=2D
+AParMooN_MODEL=/home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C
+AParMooN_ARCH=LINUX64
+AParMooN_PARALLEL_TYPE=SEQUENTIAL
+C_COMPILER=/usr/bin/gcc
+CXX_COMPILER=/usr/bin/g++
+PARMOON_CXX_DEF=  -std=c++11 -fopenmp -ltensorflow -D__2D__ -D__LINUX64__  -DTRILIBRARY -DTETLIBRARY -D_SEQ  -D__PRIVATE__
+EXE_FILE=/home/sangeeta/ParMooN/ParMooN_Output/SANG//parmoon_2D_SEQUENTIAL.exe
+============================================================================================================
+Configuration for the ParMooN Version 1.1
+         Sashikumaar Ganesan
+         Dept. of Computational & Data Sciences
+         Indian Institute of Science, Bangalore, India
+mailt0 : sashi-AT-cds.iisc.ac.in
+============================================================================================================
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/sangeeta/ParMooN/ParMooN/build
+sangeeta@sangeeta-H110M-H:~/ParMooN/ParMooN/build$ make
+Scanning dependencies of target sys
+[  1%] Building CXX object src/System/CMakeFiles/sys.dir/Assemble.C.o
+[  1%] Building CXX object src/System/CMakeFiles/sys.dir/AssembleMat2D.C.o
+[  2%] Building CXX object src/System/CMakeFiles/sys.dir/SystemNSE2D.C.o
+[  2%] Building CXX object src/System/CMakeFiles/sys.dir/SystemCD2D.C.o
+[  2%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTCD2D.C.o
+[  3%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTNSE2D_FDM.C.o
+[  3%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTNSE2D.C.o
+[  3%] Building CXX object src/System/CMakeFiles/sys.dir/CDSystemTimeDG.C.o
+[  4%] Building CXX object src/System/CMakeFiles/sys.dir/CDSystemTimeDG_1.C.o
+[  4%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTCD2D_ALE.C.o
+[  4%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTNSE2D_ALE.C.o
+[  5%] Building CXX object src/System/CMakeFiles/sys.dir/SystemCST2D.C.o
+[  5%] Building CXX object src/System/CMakeFiles/sys.dir/SystemCST2D_Giesekus.C.o
+[  5%] Building CXX object src/System/CMakeFiles/sys.dir/SystemNSECST2D.C.o
+[  6%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTNSECST2D.C.o
+[  6%] Building CXX object src/System/CMakeFiles/sys.dir/SystemTNSECST2D_ALE.C.o
+[  7%] Linking CXX static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libsys.a
+[  7%] Built target sys
+Scanning dependencies of target amg
+[  7%] Building C object src/AMG/CMakeFiles/amg.dir/amg_1d_prec.c.o
+[  7%] Building C object src/AMG/CMakeFiles/amg.dir/amg_blas_nse3d.c.o
+[  8%] Building C object src/AMG/CMakeFiles/amg.dir/amg_solve_main.c.o
+[  8%] Building C object src/AMG/CMakeFiles/amg.dir/amg_coarsen.c.o
+[  8%] Building C object src/AMG/CMakeFiles/amg.dir/amg_sp.c.o
+[  9%] Building C object src/AMG/CMakeFiles/amg.dir/amg_low.c.o
+[  9%] Building C object src/AMG/CMakeFiles/amg.dir/amg_2d_prec.c.o
+[  9%] Building C object src/AMG/CMakeFiles/amg.dir/amg_iter.c.o
+[ 10%] Building C object src/AMG/CMakeFiles/amg.dir/amg_variables.c.o
+[ 10%] Building C object src/AMG/CMakeFiles/amg.dir/amg_blas.c.o
+[ 10%] Building C object src/AMG/CMakeFiles/amg.dir/amg_blas_nse2d.c.o
+[ 11%] Building C object src/AMG/CMakeFiles/amg.dir/amg_solvers.c.o
+[ 11%] Linking C static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libamg.a
+[ 11%] Built target amg
+Scanning dependencies of target ref
+[ 12%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis1Desc.C.o
+[ 12%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis1Desc.C.o
+[ 12%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraQuad2Desc.C.o
+[ 13%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis21Desc.C.o
+[ 13%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis3Desc.C.o
+[ 14%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis4Desc.C.o
+[ 14%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad1Conf3Desc.C.o
+[ 14%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraReg0Desc.C.o
+[ 15%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis51Desc.C.o
+[ 15%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriRegDesc.C.o
+[ 15%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad1Conf0Desc.C.o
+[ 16%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis13Desc.C.o
+[ 16%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis34Desc.C.o
+[ 16%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraQuad0Desc.C.o
+[ 17%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis12Desc.C.o
+[ 17%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis10Desc.C.o
+[ 17%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis05Desc.C.o
+[ 18%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis52Desc.C.o
+[ 18%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad1Conf1Desc.C.o
+[ 19%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis0Desc.C.o
+[ 19%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad2Conf1Desc.C.o
+[ 19%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefineMortar.C.o
+[ 20%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis03Desc.C.o
+[ 20%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuadBis1Desc.C.o
+[ 20%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis12Desc.C.o
+[ 21%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad2Conf2Desc.C.o
+[ 21%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis20Desc.C.o
+[ 21%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis41Desc.C.o
+[ 22%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis30Desc.C.o
+[ 22%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis2Desc.C.o
+[ 22%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis32Desc.C.o
+[ 23%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis24Desc.C.o
+[ 23%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis54Desc.C.o
+[ 24%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefLineDesc.C.o
+[ 24%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis0Desc.C.o
+[ 24%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefHexaRegDesc.C.o
+[ 25%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuadBis0Desc.C.o
+[ 25%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis21Desc.C.o
+[ 25%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraReg1Desc.C.o
+[ 26%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis02Desc.C.o
+[ 26%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis5Desc.C.o
+[ 26%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis35Desc.C.o
+[ 27%] Building CXX object src/Refinement/CMakeFiles/ref.dir/Refinement.C.o
+[ 27%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefNoRef.C.o
+[ 27%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraQuad1Desc.C.o
+[ 28%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraReg2Desc.C.o
+[ 28%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis43Desc.C.o
+[ 29%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis53Desc.C.o
+[ 29%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuadToTri1Desc.C.o
+[ 29%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad1Conf2Desc.C.o
+[ 30%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis04Desc.C.o
+[ 30%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis45Desc.C.o
+[ 30%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis2Desc.C.o
+[ 31%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis40Desc.C.o
+[ 31%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis01Desc.C.o
+[ 31%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis25Desc.C.o
+[ 32%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis20Desc.C.o
+[ 32%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis15Desc.C.o
+[ 32%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis10Desc.C.o
+[ 33%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis23Desc.C.o
+[ 33%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad2Conf0Desc.C.o
+[ 34%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuad2Conf3Desc.C.o
+[ 34%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefMortarLineDesc.C.o
+[ 34%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTriBis02Desc.C.o
+[ 35%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraQuad3Desc.C.o
+[ 35%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis01Desc.C.o
+[ 35%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraBis14Desc.C.o
+[ 36%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefMortar0Desc.C.o
+[ 36%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuadToTri0Desc.C.o
+[ 36%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefMortar1Desc.C.o
+[ 37%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefQuadRegDesc.C.o
+[ 37%] Building CXX object src/Refinement/CMakeFiles/ref.dir/RefTetraRegDesc.C.o
+[ 37%] Linking CXX static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libref.a
+[ 37%] Built target ref
+Scanning dependencies of target quad
+[ 38%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormula3D.C.o
+[ 38%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormulaQuad.C.o
+[ 38%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormulaTria.C.o
+[ 39%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormula2D.C.o
+[ 39%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormulaHexa.C.o
+[ 39%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormula1D.C.o
+[ 40%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormulaTetra.C.o
+[ 40%] Building CXX object src/QuadFormulas/CMakeFiles/quad.dir/QuadFormula.C.o
+[ 40%] Linking CXX static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libquad.a
+[ 40%] Built target quad
+Scanning dependencies of target geo
+[ 40%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BaseCell.C.o
+[ 40%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BdCircle.C.o
+[ 41%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BdLine.C.o
+[ 41%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BdPolygon.C.o
+[ 41%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BdSpline.C.o
+[ 42%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BdNonUniformSpline.C.o
+[ 42%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BdNoPRM.C.o
+[ 42%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BoundComp.C.o
+[ 43%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BoundComp2D.C.o
+[ 43%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BoundEdge.C.o
+[ 44%] Building CXX object src/Geometry/CMakeFiles/geo.dir/BoundPart.C.o
+[ 44%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Collection.C.o
+[ 44%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Domain.C.o
+[ 45%] Building CXX object src/Geometry/CMakeFiles/geo.dir/GridCell.C.o
+[ 45%] Building CXX object src/Geometry/CMakeFiles/geo.dir/InterfaceJoint.C.o
+[ 45%] Building CXX object src/Geometry/CMakeFiles/geo.dir/IsoBoundEdge.C.o
+[ 46%] Building CXX object src/Geometry/CMakeFiles/geo.dir/IsoInterfaceJoint.C.o
+[ 46%] Building CXX object src/Geometry/CMakeFiles/geo.dir/IsoJointEqN.C.o
+[ 46%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_Between.C.o
+[ 47%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_EQ.C.o
+[ 47%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_EQLevel.C.o
+[ 47%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_Finest.C.o
+[ 48%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_LE.C.o
+[ 48%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_LELevel.C.o
+[ 49%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_Mortar.C.o
+[ 49%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_OCAF.C.o
+[ 49%] Building CXX object src/Geometry/CMakeFiles/geo.dir/It_Search.C.o
+[ 50%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Iterator.C.o
+[ 50%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Joint.C.o
+[ 50%] Building CXX object src/Geometry/CMakeFiles/geo.dir/JointCollection.C.o
+[ 51%] Building CXX object src/Geometry/CMakeFiles/geo.dir/JointEqN.C.o
+[ 51%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Line.C.o
+[ 51%] Building CXX object src/Geometry/CMakeFiles/geo.dir/MacroCell.C.o
+[ 52%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Mapper.C.o
+[ 52%] Building CXX object src/Geometry/CMakeFiles/geo.dir/MeshGen.C.o
+[ 52%] Building CXX object src/Geometry/CMakeFiles/geo.dir/MortarBaseJoint.C.o
+[ 53%] Building CXX object src/Geometry/CMakeFiles/geo.dir/MortarJoint.C.o
+[ 53%] Building CXX object src/Geometry/CMakeFiles/geo.dir/PeriodicJoint.C.o
+[ 54%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Quadrangle.C.o
+[ 54%] Building CXX object src/Geometry/CMakeFiles/geo.dir/ReadGeo.C.o
+[ 54%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Rectangle.C.o
+[ 55%] Building CXX object src/Geometry/CMakeFiles/geo.dir/RefDesc.C.o
+[ 55%] Building CXX object src/Geometry/CMakeFiles/geo.dir/SubDomainJoint.C.o
+[ 55%] Building CXX object src/Geometry/CMakeFiles/geo.dir/SubDomainHaloJoint.C.o
+[ 56%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Tests.C.o
+[ 56%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Triangle.C.o
+[ 56%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Vertex.C.o
+[ 57%] Building CXX object src/Geometry/CMakeFiles/geo.dir/Parallelogram.C.o
+[ 57%] Building CXX object src/Geometry/CMakeFiles/geo.dir/InnerInterfaceJoint.C.o
+[ 57%] Linking CXX static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libgeo.a
+[ 57%] Built target geo
+Scanning dependencies of target gen
+[ 57%] Building CXX object src/General/CMakeFiles/gen.dir/Utilities.C.o
+[ 58%] Building CXX object src/General/CMakeFiles/gen.dir/Database.C.o
+[ 58%] Building CXX object src/General/CMakeFiles/gen.dir/ReadParam.C.o
+[ 59%] Building CXX object src/General/CMakeFiles/gen.dir/MainUtilities.C.o
+[ 59%] Building CXX object src/General/CMakeFiles/gen.dir/Vector.C.o
+[ 59%] Building CXX object src/General/CMakeFiles/gen.dir/MooNMD_Io.C.o
+[ 60%] Linking CXX static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libgen.a
+[ 60%] Built target gen
+Scanning dependencies of target fe
+[ 61%] Building CXX object src/FE/CMakeFiles/fe.dir/ADICell.C.o
+[ 61%] Building CXX object src/FE/CMakeFiles/fe.dir/ADICell1D.C.o
+[ 61%] Building CXX object src/FE/CMakeFiles/fe.dir/ADISystem.C.o
+[ 62%] Building CXX object src/FE/CMakeFiles/fe.dir/ADISystem1D.C.o
+[ 62%] Building CXX object src/FE/CMakeFiles/fe.dir/Assemble2D.C.o
+[ 62%] Building CXX object src/FE/CMakeFiles/fe.dir/AuxParam2D.C.o
+[ 63%] Building CXX object src/FE/CMakeFiles/fe.dir/BaseFunct1D.C.o
+[ 63%] Building CXX object src/FE/CMakeFiles/fe.dir/BaseFunct2D.C.o
+[ 63%] Building CXX object src/FE/CMakeFiles/fe.dir/Bcgs.C.o
+[ 64%] Building CXX object src/FE/CMakeFiles/fe.dir/Blas1.C.o
+[ 64%] Building CXX object src/FE/CMakeFiles/fe.dir/Blas2.C.o
+[ 64%] Building CXX object src/FE/CMakeFiles/fe.dir/Bulk.C.o
+[ 65%] Building CXX object src/FE/CMakeFiles/fe.dir/Cg.C.o
+[ 65%] Building CXX object src/FE/CMakeFiles/fe.dir/ConvDiff.C.o
+[ 66%] Building CXX object src/FE/CMakeFiles/fe.dir/Convolution.C.o
+[ 66%] Building CXX object src/FE/CMakeFiles/fe.dir/DirectSolver.C.o
+[ 66%] Building CXX object src/FE/CMakeFiles/fe.dir/DiscreteForm2D.C.o
+[ 67%] Building CXX object src/FE/CMakeFiles/fe.dir/FE1D.C.o
+[ 67%] Building CXX object src/FE/CMakeFiles/fe.dir/FE2D.C.o
+[ 67%] Building CXX object src/FE/CMakeFiles/fe.dir/FE2DMapper.C.o
+[ 68%] Building CXX object src/FE/CMakeFiles/fe.dir/FE2DMapper1Reg.C.o
+[ 68%] Building CXX object src/FE/CMakeFiles/fe.dir/FEDatabase2D.C.o
+[ 68%] Building CXX object src/FE/CMakeFiles/fe.dir/FEDesc1D.C.o
+[ 69%] Building CXX object src/FE/CMakeFiles/fe.dir/FEDesc2D.C.o
+[ 69%] Building CXX object src/FE/CMakeFiles/fe.dir/FEFunction1D.C.o
+[ 69%] Building CXX object src/FE/CMakeFiles/fe.dir/FEFunction2D.C.o
+[ 70%] Building CXX object src/FE/CMakeFiles/fe.dir/FEM_TVD_FCT.C.o
+[ 70%] Building CXX object src/FE/CMakeFiles/fe.dir/FESpace.C.o
+[ 71%] Building CXX object src/FE/CMakeFiles/fe.dir/FESpace1D.C.o
+[ 71%] Building CXX object src/FE/CMakeFiles/fe.dir/FESpace2D.C.o
+[ 71%] Building CXX object src/FE/CMakeFiles/fe.dir/FgmresIte.C.o
+[ 72%] Building CXX object src/FE/CMakeFiles/fe.dir/FixedPointIte.C.o
+[ 72%] Building CXX object src/FE/CMakeFiles/fe.dir/HNDesc.C.o
+[ 72%] Building CXX object src/FE/CMakeFiles/fe.dir/HangingNode.C.o
+[ 73%] Building CXX object src/FE/CMakeFiles/fe.dir/ItMethod.C.o
+[ 73%] Building CXX object src/FE/CMakeFiles/fe.dir/JacobiIte.C.o
+[ 73%] Building CXX object src/FE/CMakeFiles/fe.dir/LinAlg.C.o
+[ 74%] Building CXX object src/FE/CMakeFiles/fe.dir/LineAffin.C.o
+[ 74%] Building CXX object src/FE/CMakeFiles/fe.dir/LocalProjection.C.o
+[ 74%] Building CXX object src/FE/CMakeFiles/fe.dir/Matrix.C.o
+[ 75%] Building CXX object src/FE/CMakeFiles/fe.dir/MultiGridIte.C.o
+[ 75%] Building CXX object src/FE/CMakeFiles/fe.dir/MultiGridScaIte.C.o
+[ 76%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel.C.o
+[ 76%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel1.C.o
+[ 76%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel2.C.o
+[ 77%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel3.C.o
+[ 77%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel4.C.o
+[ 77%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel5.C.o
+[ 78%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MGLevel14.C.o
+[ 78%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE_MultiGrid.C.o
+[ 78%] Building CXX object src/FE/CMakeFiles/fe.dir/NodalFunctional1D.C.o
+[ 79%] Building CXX object src/FE/CMakeFiles/fe.dir/NodalFunctional2D.C.o
+[ 79%] Building CXX object src/FE/CMakeFiles/fe.dir/Output2D.C.o
+[ 79%] Building CXX object src/FE/CMakeFiles/fe.dir/PardisoSolver.C.o
+[ 80%] Building CXX object src/FE/CMakeFiles/fe.dir/QuadAffin.C.o
+[ 80%] Building CXX object src/FE/CMakeFiles/fe.dir/QuadIsoparametric.C.o
+[ 81%] Building CXX object src/FE/CMakeFiles/fe.dir/QuadBilinear.C.o
+[ 81%] Building CXX object src/FE/CMakeFiles/fe.dir/RationalLES.C.o
+[ 81%] Building CXX object src/FE/CMakeFiles/fe.dir/RefTrans1D.C.o
+[ 82%] Building CXX object src/FE/CMakeFiles/fe.dir/RefTrans2D.C.o
+[ 82%] Building CXX object src/FE/CMakeFiles/fe.dir/Solver.C.o
+[ 82%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareMatrix.C.o
+[ 83%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareMatrix1D.C.o
+[ 83%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareMatrix2D.C.o
+[ 83%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareStructure.C.o
+[ 84%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareStructure1D.C.o
+[ 84%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareStructure2D.C.o
+[ 84%] Building CXX object src/FE/CMakeFiles/fe.dir/SSORIte.C.o
+[ 85%] Building CXX object src/FE/CMakeFiles/fe.dir/Structure.C.o
+[ 85%] Building CXX object src/FE/CMakeFiles/fe.dir/TimeDiscRout.C.o
+[ 86%] Building CXX object src/FE/CMakeFiles/fe.dir/TriaAffin.C.o
+[ 86%] Building CXX object src/FE/CMakeFiles/fe.dir/TriaIsoparametric.C.o
+[ 86%] Building CXX object src/FE/CMakeFiles/fe.dir/VMS.C.o
+[ 87%] Building CXX object src/FE/CMakeFiles/fe.dir/Assemble2D_edge_Oseen.C.o
+[ 87%] Building CXX object src/FE/CMakeFiles/fe.dir/Bulk_2d3d.C.o
+[ 87%] Building CXX object src/FE/CMakeFiles/fe.dir/CD2DErrorEstimator.C.o
+[ 88%] Building CXX object src/FE/CMakeFiles/fe.dir/ConvDiff2D.C.o
+[ 88%] Building CXX object src/FE/CMakeFiles/fe.dir/Darcy2D.C.o
+[ 88%] Building CXX object src/FE/CMakeFiles/fe.dir/Drop.C.o
+[ 89%] Building CXX object src/FE/CMakeFiles/fe.dir/FEVectFunct2D.C.o
+[ 89%] Building CXX object src/FE/CMakeFiles/fe.dir/FreeSurface2D.C.o
+[ 89%] Building CXX object src/FE/CMakeFiles/fe.dir/MGComponents2D.C.o
+[ 90%] Building CXX object src/FE/CMakeFiles/fe.dir/MGLevel2D.C.o
+[ 90%] Building CXX object src/FE/CMakeFiles/fe.dir/MovingNavierStokes.C.o
+[ 91%] Building CXX object src/FE/CMakeFiles/fe.dir/MultiGrid2D.C.o
+[ 91%] Building CXX object src/FE/CMakeFiles/fe.dir/Matrix2D.C.o
+[ 91%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2DErrorEstimator.C.o
+[ 92%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_AxialSymm3D_FixPo.C.o
+[ 92%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_EquOrd_FixPo.C.o
+[ 92%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_FixPo.C.o
+[ 93%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_FixPoSkew.C.o
+[ 93%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_FixPoRot.C.o
+[ 93%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_Friction_FixPo.C.o
+[ 94%] Building CXX object src/FE/CMakeFiles/fe.dir/NSE2D_Newton.C.o
+[ 94%] Building CXX object src/FE/CMakeFiles/fe.dir/PDAE_Index2D_2.C.o
+[ 94%] Building CXX object src/FE/CMakeFiles/fe.dir/RFB.C.o
+[ 95%] Building CXX object src/FE/CMakeFiles/fe.dir/RKV_FDM.C.o
+[ 95%] Building CXX object src/FE/CMakeFiles/fe.dir/SquareMatrixNSE2D.C.o
+[ 96%] Building CXX object src/FE/CMakeFiles/fe.dir/SSMUM.C.o
+[ 96%] Building CXX object src/FE/CMakeFiles/fe.dir/StructureNSE2D.C.o
+[ 96%] Building CXX object src/FE/CMakeFiles/fe.dir/Structure2D.C.o
+[ 97%] Building CXX object src/FE/CMakeFiles/fe.dir/Superconvergence2D.C.o
+[ 97%] Building CXX object src/FE/CMakeFiles/fe.dir/TCD2D.C.o
+[ 97%] Building CXX object src/FE/CMakeFiles/fe.dir/TimeConvDiff2D.C.o
+[ 98%] Building CXX object src/FE/CMakeFiles/fe.dir/TNSE2D_FixPo.C.o
+[ 98%] Building CXX object src/FE/CMakeFiles/fe.dir/TNSE2D_FixPoRot.C.o
+[ 98%] Building CXX object src/FE/CMakeFiles/fe.dir/TNSE2D_FixPo_SSMUM.C.o
+[ 99%] Building CXX object src/FE/CMakeFiles/fe.dir/Upwind.C.o
+[ 99%] Linking CXX static library /home/sangeeta/ParMooN/ParMooN_Output/SANG/lib/libfe.a
+[ 99%] Built target fe
+Scanning dependencies of target parmoon_2D_SEQUENTIAL.exe
+[100%] Building CXX object CMakeFiles/parmoon_2D_SEQUENTIAL.exe.dir/2DPrograms/CD2D_ParMooN.C.o
+In file included from /home/sangeeta/try/libtorch/include/ATen/ATen.h:3:0,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/Allocator.h: In member function ‘void* c10::Allocator::raw_allocate(size_t)’:
+/home/sangeeta/try/libtorch/include/c10/core/Allocator.h:162:5: error: ‘AT_ASSERT’ was not declared in this scope
+     AT_ASSERT{dptr.get()==dptr.get_context()};
+     ^
+/home/sangeeta/try/libtorch/include/c10/core/Allocator.h: In member function ‘void c10::Allocator::raw_deallocate(void*)’:
+/home/sangeeta/try/libtorch/include/c10/core/Allocator.h:167:5: error: ‘AT_ASSERT’ was not declared in this scope
+     AT_ASSERT{d};
+     ^
+In file included from /home/sangeeta/try/libtorch/include/c10/core/Layout.h:3:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:7,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h: In function ‘c10::Backend c10::tensorTypeIdToBackend(c10::TensorTypeId)’:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:87:5: error: ‘AT_ERROR’ was not declared in this scope
+     AT_ERROR{"Unrecognized tensor type ID: ",t};
+     ^
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h: In function ‘c10::DeviceType c10::backendToDeviceType(c10::Backend)’:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:135:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Undefined backend is not a valid device type"};
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:137:15: error: expected ‘;’ before ‘{’ token
+       AT_ERROR{"Unknown backend"};
+               ^
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h: In function ‘c10::Backend c10::deviceTypeToBackend(c10::DeviceType)’:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:154:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unknown device type ", d};
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h: In function ‘c10::Backend c10::backendToCPU(c10::Backend)’:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:178:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unknown backend"};
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h: In function ‘c10::Backend c10::backendToCUDA(c10::Backend)’:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:197:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unknown backend"};
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h: In function ‘c10::Backend c10::backendToHIP(c10::Backend)’:
+/home/sangeeta/try/libtorch/include/c10/core/Backend.h:216:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unknown backend"};
+       ^
+In file included from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:7:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/Layout.h: In function ‘std::ostream& c10::operator<<(std::ostream&, c10::Layout)’:
+/home/sangeeta/try/libtorch/include/c10/core/Layout.h:32:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unknown layout"};
+       ^
+In file included from /home/sangeeta/try/libtorch/include/c10/core/ScalarType.h:3:0,
+                 from /home/sangeeta/try/libtorch/include/c10/core/Scalar.h:10,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:8,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h: In member function ‘const T& c10::ArrayRef<T>::front() const’:
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h:144:5: error: ‘AT_CHECK’ was not declared in this scope
+     AT_CHECK{!empty(), "ArrayRef: attempted to access front() of empty list"};
+     ^
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h: In member function ‘const T& c10::ArrayRef<T>::back() const’:
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h:150:5: error: ‘AT_CHECK’ was not declared in this scope
+     AT_CHECK{!empty(), "ArrayRef: attempted to access back() of empty list"};
+     ^
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h: In member function ‘c10::ArrayRef<T> c10::ArrayRef<T>::slice(size_t, size_t) const’:
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h:162:5: error: ‘AT_CHECK’ was not declared in this scope
+     AT_CHECK{
+     ^
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h: In member function ‘const T& c10::ArrayRef<T>::at(size_t) const’:
+/home/sangeeta/try/libtorch/include/c10/util/ArrayRef.h:187:5: error: ‘AT_CHECK’ was not declared in this scope
+     AT_CHECK{
+     ^
+In file included from /home/sangeeta/try/libtorch/include/c10/core/Scalar.h:10:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:8,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h: In function ‘caffe2::TypeMeta c10::scalarTypeToTypeMeta(c10::ScalarType)’:
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h:80:14: error: ‘AT_ERROR’ was not declared in this scope
+     default: AT_ERROR{"Unrecognized Scalartype ", scalar_type, " (please report
+              ^
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h: In function ‘c10::ScalarType c10::typeMetaToScalarType(caffe2::TypeMeta)’:
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h:102:3: error: ‘AT_ERROR’ was not declared in this scope
+   AT_ERROR{"Unsupported TypeMeta in ATen: ", dtype, " (please report this error
+   ^
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h: In function ‘size_t c10::elementSize(c10::ScalarType)’:
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h:141:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unknown ScalarType"};
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h: In function ‘c10::ScalarType c10::promoteTypes(c10::ScalarType, c10::ScalarType)’:
+/home/sangeeta/try/libtorch/include/c10/core/ScalarType.h:182:5: error: ‘AT_ERROR’ was not declared in this scope
+     AT_ERROR{"promoteTypes with complex numbers is not handled yet; figure out 
+     ^
+In file included from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:15:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/TensorOptions.h: In function ‘c10::TensorTypeId c10::computeTensorTypeId(c10::TensorOptions)’:
+/home/sangeeta/try/libtorch/include/c10/core/TensorOptions.h:516:11: error: ‘AT_ERROR’ was not declared in this scope
+           AT_ERROR{"Unsupported device type for dense layout: ", options.device
+           ^
+/home/sangeeta/try/libtorch/include/c10/core/TensorOptions.h:527:11: error: ‘AT_ERROR’ was not declared in this scope
+           AT_ERROR{"Unsupported device type for sparse layout: ", options.devic
+           ^
+/home/sangeeta/try/libtorch/include/c10/core/TensorOptions.h:530:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{"Unsupported layout: ", options.layout()};
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/TensorOptions.h: In function ‘c10::DeviceType c10::computeDeviceType(c10::TensorTypeId)’:
+/home/sangeeta/try/libtorch/include/c10/core/TensorOptions.h:562:5: error: ‘AT_ASSERTM’ was not declared in this scope
+     AT_ASSERTM{false, "Unknown TensorTypeId: ", tid};
+     ^
+In file included from /home/sangeeta/try/libtorch/include/ATen/Type.h:2:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/ATen/core/Type.h: In member function ‘c10::TensorOptions at::Type::options(c10::optional<c10::Device>) const’:
+/home/sangeeta/try/libtorch/include/ATen/core/Type.h:200:8: error: ‘AT_ASSERT’ was not declared in this scope
+        AT_ASSERT{device.type() == device_type()};
+        ^
+In file included from /home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h:6:0,
+                 from /home/sangeeta/try/libtorch/include/c10/core/Storage.h:3,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Tensor.h:8,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:629,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h: In destructor ‘virtual c10::intrusive_ptr_target::~intrusive_ptr_target()’:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:85:5: error: ‘AT_ASSERTM’ was not declared in this scope
+     AT_ASSERTM{
+     ^
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:88:15: error: expected ‘;’ before ‘{’ token
+     AT_ASSERTM{
+               ^
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h: In member function ‘void c10::intrusive_ptr<T, NullType>::retain_()’:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:177:7: error: ‘AT_ASSERTM’ was not declared in this scope
+       AT_ASSERTM{
+       ^
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h: In static member function ‘static c10::intrusive_ptr<T, NullType> c10::intrusive_ptr<T, NullType>::reclaim(TTarget*)’:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:348:5: error: ‘AT_ASSERTM’ was not declared in this scope
+     AT_ASSERTM{
+     ^
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h: In static member function ‘static c10::intrusive_ptr<T, NullType> c10::intrusive_ptr<T, NullType>::unsafe_reclaim_from_nonowning(TTarget*)’:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:373:5: error: ‘AT_ASSERTM’ was not declared in this scope
+     AT_ASSERTM{
+     ^
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h: In member function ‘void c10::weak_intrusive_ptr<T, NullType>::retain_()’:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:446:7: error: ‘AT_ASSERTM’ was not declared in this scope
+       AT_ASSERTM{
+       ^
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h: In static member function ‘static c10::weak_intrusive_ptr<T, NullType> c10::weak_intrusive_ptr<T, NullType>::reclaim(TTarget*)’:
+/home/sangeeta/try/libtorch/include/c10/util/intrusive_ptr.h:624:5: error: ‘AT_ASSERTM’ was not declared in this scope
+     AT_ASSERTM{
+     ^
+In file included from /home/sangeeta/try/libtorch/include/c10/core/Storage.h:3:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Tensor.h:8,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:629,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h: In constructor ‘c10::StorageImpl::StorageImpl(caffe2::TypeMeta, int64_t, c10::DataPtr, c10::Allocator*, bool)’:
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h:24:8: error: ‘AT_ASSERTM’ was not declared in this scope
+        AT_ASSERTM{
+        ^
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h:29:9: error: ‘AT_ERROR’ was not declared in this scope
+         AT_ERROR{
+         ^
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h: In member function ‘T* c10::StorageImpl::data() const’:
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h:68:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h: In member function ‘void c10::StorageImpl::set_resizable(bool)’:
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h:170:8: error: ‘AT_ASSERT’ was not declared in this scope
+        AT_ASSERT{allocator_};
+        ^
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h: In member function ‘void c10::StorageImpl::UniqueStorageShareExternalPointer(c10::DataPtr&&, const caffe2::TypeMeta&, size_t)’:
+/home/sangeeta/try/libtorch/include/c10/core/StorageImpl.h:198:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{
+       ^
+In file included from /home/sangeeta/try/libtorch/include/ATen/core/Tensor.h:8:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:629,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/Storage.h: In member function ‘void c10::Storage::UniqueStorageShareExternalPointer(void*, const caffe2::TypeMeta&, size_t, c10::DeleterFnPtr)’:
+/home/sangeeta/try/libtorch/include/c10/core/Storage.h:160:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{
+       ^
+/home/sangeeta/try/libtorch/include/c10/core/Storage.h: In member function ‘void c10::Storage::UniqueStorageShareExternalPointer(c10::DataPtr&&, const caffe2::TypeMeta&, size_t)’:
+/home/sangeeta/try/libtorch/include/c10/core/Storage.h:172:7: error: ‘AT_ERROR’ was not declared in this scope
+       AT_ERROR{
+       ^
+In file included from /home/sangeeta/try/libtorch/include/ATen/core/Tensor.h:10:0,
+                 from /home/sangeeta/try/libtorch/include/ATen/core/Type.h:629,
+                 from /home/sangeeta/try/libtorch/include/ATen/Type.h:2,
+                 from /home/sangeeta/try/libtorch/include/ATen/Context.h:4,
+                 from /home/sangeeta/try/libtorch/include/ATen/ATen.h:5,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/types.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/data.h:3,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/all.h:4,
+                 from /home/sangeeta/try/libtorch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:1:
+/home/sangeeta/try/libtorch/include/c10/core/TensorImpl.h: In function ‘int64_t c10::size_to_dim_(int, c10::IntArrayRef)’:
+/home/sangeeta/try/libtorch/include/c10/core/TensorImpl.h:63:3: error: ‘AT_ASSERT’ was not declared in this scope
+   AT_ASSERT{(unsigned)k <= dims.size());
+   ^
+/home/sangeeta/try/libtorch/include/c10/core/TensorImpl.h:72:66: error: a function-definition is not allowed here before ‘{’ token
+ inline int64_t size_between_dim_(int k, int l, IntArrayRef dims) {
+                                                                  ^
+/home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:7:1: error: expected ‘}’ at end of input
+ }
+ ^
+/home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C: At global scope:
+/home/sangeeta/ParMooN/ParMooN/2DPrograms/CD2D_ParMooN.C:7:1: error: expected ‘}’ at end of input
+CMakeFiles/parmoon_2D_SEQUENTIAL.exe.dir/build.make:62: recipe for target 'CMakeFiles/parmoon_2D_SEQUENTIAL.exe.dir/2DPrograms/CD2D_ParMooN.C.o' failed
+make[2]: *** [CMakeFiles/parmoon_2D_SEQUENTIAL.exe.dir/2DPrograms/CD2D_ParMooN.C.o] Error 1
+CMakeFiles/Makefile2:73: recipe for target 'CMakeFiles/parmoon_2D_SEQUENTIAL.exe.dir/all' failed
+make[1]: *** [CMakeFiles/parmoon_2D_SEQUENTIAL.exe.dir/all] Error 2
+Makefile:83: recipe for target 'all' failed
+make: *** [all] Error 2
+sangeeta@sangeeta-H110M-H:~/ParMooN/ParMooN/build$ 
+

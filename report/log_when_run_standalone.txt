@@ -1,0 +1,12 @@
+bash: /opt/openfoam5/etc/bashrc: No such file or directory
+sangeeta@sangeeta-H110M-H:~/libtorch/example-app/BUILD$ make
+Scanning dependencies of target example-app
+[ 50%] Building CXX object CMakeFiles/example-app.dir/example-app.cpp.o
+[100%] Linking CXX executable example-app
+[100%] Built target example-app
+sangeeta@sangeeta-H110M-H:~/libtorch/example-app/BUILD$ ./example-app
+ 0.2082  0.9279  0.3226
+ 0.9530  0.1177  0.1513
+[ Variable[CPUFloatType]{2,3} ]
+sangeeta@sangeeta-H110M-H:~/libtorch/example-app/BUILD$ 
+

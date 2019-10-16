@@ -1,0 +1,19 @@
+# This is a Mercurial configuration file.
+[ui]
+username = sangeetay
+
+[extdiff]
+cmd.kdiff3 =
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output -L1 CommonAncestor -L2 MyOriginal -L3 OtherVersion
+
+[web]
+contact = Sashikumaar Ganesan
+description = ParMooN Manual
+name = hg/ParMooN_Manual
+style = gitweb
+allow_push = sashi
+push_ssl = false
+allow_archive = gz, zip, bz2
+

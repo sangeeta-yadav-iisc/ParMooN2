@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/first_example.dir/first_example.cpp.o  -o first_example -rdynamic /home/sangeeta/libtorch/lib/libtorch.so /home/sangeeta/libtorch/lib/libc10.so -Wl,--no-as-needed,/home/sangeeta/libtorch/lib/libcaffe2.so -Wl,--as-needed /home/sangeeta/libtorch/lib/libc10.so -lpthread -Wl,-rpath,/home/sangeeta/libtorch/lib 

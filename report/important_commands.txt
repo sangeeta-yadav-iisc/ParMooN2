@@ -1,0 +1,7 @@
+to include any library related to new package just add it in 
+
+include_directories("${CMAKE_SOURCE_DIR}/include/General") in the file /home/sangeeta/ParMooN/ParMooN/CMakeLists.txt
+
+I am defining all the cmake variables in cmake of parmoon but the issue is that it can't find the path to libraries for cmake of torch
+
+After lunch resolve how to give the path of torchconfig.cmake

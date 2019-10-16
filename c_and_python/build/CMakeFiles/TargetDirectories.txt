@@ -1,0 +1,3 @@
+/home/sangeeta/ParMooN_torch/c_and_python/build/CMakeFiles/edit_cache.dir
+/home/sangeeta/ParMooN_torch/c_and_python/build/CMakeFiles/rebuild_cache.dir
+/home/sangeeta/ParMooN_torch/c_and_python/build/CMakeFiles/first_example.dir

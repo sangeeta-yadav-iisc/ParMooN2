@@ -1,0 +1,43 @@
+CREATE torch.a
+ADDLIB	libbenchmark.a                    
+ADDLIB	libgomp-8bba0e50.so.1
+ADDLIB	libbenchmark_main.a              
+ADDLIB	libgtest.a
+ADDLIB	libc10d.a                         
+ADDLIB	libgtest_main.a
+ADDLIB	libc10.so                         
+ADDLIB	libmkldnn.a
+ADDLIB	libcaffe2_detectron_ops.so        
+ADDLIB	libnnpack.a
+ADDLIB	libcaffe2_module_test_dynamic.so  
+ADDLIB	libnnpack_reference_layers.a
+ADDLIB	libCaffe2_perfkernels_avx2.a      
+ADDLIB	libonnx.a
+ADDLIB	libCaffe2_perfkernels_avx.a       
+ADDLIB	libonnxifi_dummy.so
+ADDLIB	libcaffe2_protos.a               
+ADDLIB	libonnxifi_loader.a
+ADDLIB	libcaffe2.so                      
+ADDLIB	libonnxifi.so
+ADDLIB	libclog.a                         
+ADDLIB	libonnx_proto.a
+ADDLIB	libcpuinfo.a                    
+ADDLIB	libprotobuf.a
+ADDLIB	libcpuinfo_internals.a            
+ADDLIB	libprotobuf-lite.a
+ADDLIB	libfoxi_dummy.so                  
+ADDLIB	libprotoc.a
+ADDLIB	libfoxi_loader.a                  
+ADDLIB	libpthreadpool.a
+ADDLIB	libfoxi.so                        
+ADDLIB	libqnnpack.a
+ADDLIB	libgloo.a                       
+ADDLIB	libTHD.a
+ADDLIB	libgloo_builder.a              
+ADDLIB	libtorch.so
+ADDLIB	libgmock.a                      
+ADDLIB	libtorch.so.1
+ADDLIB	libgmock_main.a
+SAVE
+END
+

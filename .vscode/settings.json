@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "ConvDiff2D.C": "cpp",
+        "ConvDiff.C": "cpp",
+        "DiscreteForm2D.C": "cpp",
+        "Assemble2D.C": "cpp",
+        "CD2D_ParMooN.C": "cpp",
+        "TCD2D_ParMooN.C": "cpp",
+        "Upwind.C": "cpp",
+        "CD2D_NN.C": "cpp",
+        "SystemCD2D.C": "cpp",
+        "ConvDiff3D.C": "cpp",
+        "AuxParam2D.C": "cpp",
+        "NSE2D_FixPoRot.C": "cpp",
+        "NSE2D_FixPo.C": "cpp",
+        "TNSE_2DAxial_ImpDropOnSolid.C": "cpp",
+        "CD2DN.C": "cpp",
+        "ReadGeo.C": "cpp",
+        "Domain.C": "cpp"
+    }
+}
